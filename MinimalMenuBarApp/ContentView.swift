@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var textField:String = ""
+
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            Button("Click me!", action: {
+                print("clicked!")
+            })
+            TextField("Enter something", text: $textField, onCommit: {
+                print("text field committed! value: \(textField)")
+            })
+            Menu {
+                Text("Item 1")
+                Text("Item 2")
+            } label: {
+                Text("Test Menu")
+            }
+        }
+        .padding()
     }
 }
 

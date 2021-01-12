@@ -11,7 +11,7 @@
 		A20FB47F25AD19B400D35CCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FB47E25AD19B400D35CCC /* ContentView.swift */; };
 		A20FB48125AD19B600D35CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20FB48025AD19B600D35CCC /* Assets.xcassets */; };
 		A20FB48425AD19B600D35CCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20FB48325AD19B600D35CCC /* Preview Assets.xcassets */; };
-		A20FB48725AD19B600D35CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20FB48525AD19B600D35CCC /* Main.storyboard */; };
+		A20FB49125AD1F7B00D35CCC /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FB49025AD1F7B00D35CCC /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +20,9 @@
 		A20FB47E25AD19B400D35CCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A20FB48025AD19B600D35CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20FB48325AD19B600D35CCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A20FB48625AD19B600D35CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A20FB48825AD19B600D35CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20FB48925AD19B600D35CCC /* MinimalMenuBarApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinimalMenuBarApp.entitlements; sourceTree = "<group>"; };
+		A20FB49025AD1F7B00D35CCC /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				A20FB47C25AD19B400D35CCC /* AppDelegate.swift */,
+				A20FB49025AD1F7B00D35CCC /* StatusBarController.swift */,
 				A20FB47E25AD19B400D35CCC /* ContentView.swift */,
 				A20FB48025AD19B600D35CCC /* Assets.xcassets */,
-				A20FB48525AD19B600D35CCC /* Main.storyboard */,
 				A20FB48825AD19B600D35CCC /* Info.plist */,
 				A20FB48925AD19B600D35CCC /* MinimalMenuBarApp.entitlements */,
 				A20FB48225AD19B600D35CCC /* Preview Content */,
@@ -131,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20FB48725AD19B600D35CCC /* Main.storyboard in Resources */,
 				A20FB48425AD19B600D35CCC /* Preview Assets.xcassets in Resources */,
 				A20FB48125AD19B600D35CCC /* Assets.xcassets in Resources */,
 			);
@@ -145,22 +144,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20FB47F25AD19B400D35CCC /* ContentView.swift in Sources */,
+				A20FB49125AD1F7B00D35CCC /* StatusBarController.swift in Sources */,
 				A20FB47D25AD19B400D35CCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A20FB48525AD19B600D35CCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A20FB48625AD19B600D35CCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A20FB48A25AD19B600D35CCC /* Debug */ = {
@@ -295,7 +284,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.footle.MinimalMenuBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -319,7 +308,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.footle.MinimalMenuBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
