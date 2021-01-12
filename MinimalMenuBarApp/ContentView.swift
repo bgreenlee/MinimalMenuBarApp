@@ -15,15 +15,21 @@ struct ContentView: View {
             Button("Click me!", action: {
                 print("clicked!")
             })
+
             TextField("Enter something", text: $textField, onCommit: {
                 print("text field committed! value: \(textField)")
             })
+
             Menu {
                 Text("Item 1")
                 Text("Item 2")
             } label: {
-                Text("Test Menu")
+                Text("Menu doesn't work")
             }
+
+            Button("Quit", action: {
+                NSApplication.shared.terminate(self)
+            })
         }
         .padding()
     }
